@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>collegeList</title>
+  </head>
+  <body>
+    <style>
+      .heading {
+        text-align: center;
+      }
+    </style>
+    <h1 class="heading">My Details</h1>
+    <form action="#" method="get">
+      <div>
+        <label for="userName">Username</label>
+        <input type="text" name="userName" required placeholder="afrah123" />
+      </div>
+      <div>
+        <label for="collegeList">Choose your college</label>
+        <!-- Dropdown List -->
+        <select name="collegeList" id="collegeList" required>
+          <option value="">--Please choose a college--</option>
+          <option value="thakur">Thakur</option>
+          <option value="xaviers">Xaviers</option>
+          <option value="pillai">Pillai</option>
+          <option value="royal">Royal</option>
+          <option value="kc">KC</option>
+        </select>
+      </div>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

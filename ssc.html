@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSC</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+      }
+
+      .main {
+        height: 100vh;
+        width: 100vw;
+        background: green;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .row {
+        border: 1px solid red;
+      }
+
+      .column {
+        border: 1px solid red;
+      }
+
+      .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .row.exit {
+        display: grid;
+        place-items: center;
+      }
+
+      .row h1 {
+        text-align: center;
+      }
+
+      button {
+        height: 35px;
+        width: 200px;
+      }
+    </style>
+    <script>
+      function exit() {
+        alert("Are you braindead??????");
+        // window.close();
+      }
+    </script>
+    <div class="main">
+      <div class="row">
+        <h1>Maharashtra State Board</h1>
+      </div>
+      <div class="row middle">
+        <div class="column">
+          <h1>Information Technology</h1>
+        </div>
+        <div class="column">
+          <h1>Information Technology</h1>
+        </div>
+      </div>
+      <div class="row exit">
+        <button onclick="exit()">Exit</button>
+      </div>
+    </div>
+  </body>
+</html>
