@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information</title>
+  </head>
+  <body>
+    <style>
+      .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .submit-button {
+        font-size: 16px;
+        width: 150px;
+        background: yellow;
+        outline: none;
+        border: none;
+        padding: 8px;
+      }
+    </style>
+    <form method="post" action="file.asp">
+      <div class="form">
+        <label for="studentName">Student Name</label>
+        <input required type="text" name="studentName" />
+        <label for="studentAddress">Address</label>
+        <input required type="text" name="studentAddress" />
+        <label for="studentCity">City</label>
+        <input required type="text" name="studentCity" />
+        <label for="studentAge">Age</label>
+        <input required type="number" name="studentAge" min="18" max="42" />
+        <label for="studentGender">Gender</label>
+        <input required type="text" name="studentGender" />
+        <label for="studentHobbies">Hobbies</label>
+        <input required type="text" name="studentHobbies" />
+      </div>
+
+      <button class="submit-button one" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

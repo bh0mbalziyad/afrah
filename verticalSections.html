@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Vertical Sections</title>
+  </head>
+  <body>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+
+      .main {
+        height: 100vh;
+        width: 100vw;
+        background: #ff4646;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .box {
+        border: 1px solid white;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .box.one {
+        color: blue;
+      }
+
+      .box.two {
+        color: green;
+      }
+
+      .box.three {
+        color: black;
+      }
+
+      .box.four {
+        color: brown;
+      }
+    </style>
+    <div class="main">
+      <div class="box one">one</div>
+      <div class="box two">two</div>
+      <div class="box three">three</div>
+      <div class="box four">four</div>
+    </div>
+  </body>
+</html>

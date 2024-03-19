@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UDAY Hospital</title>
+  </head>
+  <body>
+    <style>
+      .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .submit-button {
+        margin-top: 40px;
+        font-size: 16px;
+        width: 150px;
+        background: gray;
+        outline: none;
+        border: none;
+        padding: 8px;
+      }
+
+      form {
+        background: blue;
+        color: white;
+        height: 400px;
+      }
+    </style>
+    <form method="post" action="">
+      <div class="form">
+        <label for="patientName">Patient Name</label>
+        <input
+          required
+          type="text"
+          name="patientName"
+          placeholder="First Name Last Name"
+        />
+
+        <label for="patientDOB">Date of Birth</label>
+        <input required type="date" name="patientDOB" />
+
+        <label for="patientImage">Image</label>
+        <input required type="file" name="patientImage" />
+      </div>
+
+      <button class="submit-button one" type="reset">Reset</button>
+      <button class="submit-button one" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
